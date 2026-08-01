@@ -1,4 +1,9 @@
 #!/usr/bin/env python3
+#Lzici
+#Copyright (C) 2026 lazypaCCap
+#This program is free software: you can redistribute it and/or modify it under the terms of the GNU Affero General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+#This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Affero General Public License for more details.
+#You should have received a copy of the GNU Affero General Public License along with this program. If not, see <https://www.gnu.org/licenses/>.
 from textual.app import App
 from textual.widgets import Input, Button, RichLog, Header, Footer, Button
 from textual.containers import VerticalGroup, HorizontalGroup
@@ -22,11 +27,11 @@ class Cbl(VerticalGroup):
         
     def on_button_pressed(self, event):
         bid = event.button.id
-        if bid == "quit":
+        if (bid == "quit"):
             self.app.exit()
-        elif bid == "settings":
+        elif (bid == "settings"):
             self.app.action_设置()
-        elif bid == "history":
+        elif (bid == "history"):
             self.app.action_历史()
         else:
             sys.exit(1)
@@ -89,7 +94,7 @@ class qd(App):
         global maini
         global maint
         inp = event.value
-        if useing == True:
+        if (useing == True):
             return
         elif (inp == ""):
             self.log("内容不能为空")
