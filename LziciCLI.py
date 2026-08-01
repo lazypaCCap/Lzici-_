@@ -75,7 +75,7 @@ def ollama(提示词, 温度, 重复惩罚, 种子, 最大生成长度, 上下�
         if 流式 == 'False':
             流式解析 = 0
         else:
-            print ("流式的值不合法,使用Ture/False,首字母大写")
+            print ("流式的值不合法,使用True/False,首字母大写")
             sys.exit(1)
         流式布尔 = (流式解析 == 1)
     if 流式解析 == 0:
@@ -94,4 +94,4 @@ def ollama(提示词, 温度, 重复惩罚, 种子, 最大生成长度, 上下�
         sys.exit(0)
 if __name__ == "__main__":
     输入()
-#此代码的所有信息见文档(lazypaccap.github.io/words/Lzici-_/)
+
