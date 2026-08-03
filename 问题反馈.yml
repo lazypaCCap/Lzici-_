@@ -1,0 +1,47 @@
+name: 问题反馈
+body:
+  - type: checkboxes
+    id: 00
+    attributes:
+      label: 开始之前
+      description: 确认以下选项并按你的事实勾选
+      options:
+        - label: 我已检查过现有issue，无重复
+          required: true
+        - label: 我确定我未对源码做出修改(若修改，请自行解决)
+          required: true
+        - label: 我确定我在安装了python和textual的环境中运行出现问题
+          required: true
+  - type: input
+    id: 01
+    attributes:
+      label: 版本
+      placeholder: 从releases处下载的源码，tag版本即版本，若直接下载源码请自行解决
+    validations:
+      required: true
+  - type: input
+    id: 02
+    attributes:
+      label: python版本
+      placeholder: 输入你的python版本
+    validations:
+      required: true
+  - type: input
+    id: 03
+    attributes:
+      label: textual版本
+      placeholder: 输入你的textual版本
+    validations:
+      required: true
+  - type: input
+    id: 04
+    attributes:
+      label: 操作系统版本
+      placeholder: 输入你的操作系统版本，如Debian13,Windows10
+    validations:
+      required: true
+  - type: textare
+    id: 05
+    attributes:
+      label:问题描述
+      placeholder:  请详细描述您遇到的问题。
